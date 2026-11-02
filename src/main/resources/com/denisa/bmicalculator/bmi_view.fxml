@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefWidth="350.0" prefHeight="400.0" spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.denisa.bmicalculator.BMIController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Kalkulator BMI" />
+
+    <TextField fx:id="txtWeight" promptText="Masukkan Berat Badan (kg)" />
+    <TextField fx:id="txtHeight" promptText="Masukkan Tinggi Badan (cm)" />
+
+    <Button fx:id="btnCalculate" onAction="#handleCalculate" style="-fx-background-color: #4CAF50; -fx-text-fill: white;" text="Hitung BMI" />
+
+    <Label fx:id="lblResult" style="-fx-font-size: 14px;" text="Hasil BMI: -" />
+    <Label fx:id="lblCategory" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Kategori: -" />
+
+</VBox>
+
